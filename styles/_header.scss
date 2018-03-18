@@ -1,0 +1,120 @@
+// HEADER
+
+.header-one {
+	color: $Blue;
+	letter-spacing: 6px;
+	text-shadow: 2px 2px $LightBlue;
+	text-align: center;
+	flex: 0 0;
+	font-size: 1.5em;
+}
+
+header {
+	margin-top: 0;
+	padding-top: 3%;
+	padding-bottom: 10%;
+	background: url('../assets/scott-webb-272211-unsplash.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	text-transform: uppercase;
+	clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 100%, 0 50%);
+	z-index: 8;
+	position: relative;
+}
+
+.top-bar {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	background: #fff;
+	border: 5px solid #666;
+	box-shadow: 5px 5px $LightPurple;
+}
+
+.nav {
+	flex: 1 1;
+	margin: auto 1%;
+	li {
+		margin-right: 5%;
+		margin-bottom: 2%;
+		a {
+			color: #666;
+			position: relative;
+			transition: all 0.3s ease-in-out;
+		}
+
+		a:before, a:after {
+			content: '';
+			position: absolute;
+			transition: all 0.3s ease-in-out;
+		}
+
+		a:after {
+			width: 100%;
+			height: 3px;
+			background: $Blue;
+			left:0;
+			bottom: -5px;
+			transform: scale(0);
+		}
+
+		a:hover:after {
+			transform: scale(1.1);
+		}
+	}
+}
+.logo-outer {
+	margin: 0 3%;
+}
+
+.logo_inner{
+	box-shadow: 5px 5px $LightPurple;
+	min-width: 70px;
+	max-width: 110px;
+	color: $Blue;
+	transform: rotate(45deg);
+	border: 5px solid #666;
+	background: #fff;
+	margin-top: -10%;
+	svg {
+		fill: $Blue;
+		padding: 10% 10%;
+		height: auto;
+		display: block;
+		transform: rotate(-45deg);
+	}
+}
+.search-container{
+	margin: auto 1%;
+	flex: 1 1;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	button {
+		border: 2px solid #666;
+		color: #fff;
+		background: #666;
+		display: inline-block;
+		padding: 10px 10px;
+		margin-left: 0;
+		transition: 0.3s;
+	}
+
+	button:hover {
+		color: #fff;
+		background: $Blue;
+		border: 2px solid $Blue;
+	}
+	input {
+		border: 2px solid #666;
+		display: inline-block;
+		padding: 10px 10px;
+		margin-right: 0;
+		width: 70%;
+		font-family: $SansSerif;
+		border-right: none;
+	}
+}
+

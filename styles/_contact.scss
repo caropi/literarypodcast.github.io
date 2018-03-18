@@ -1,0 +1,69 @@
+.contact-us {
+	text-align: center;
+	padding: 5% 0;
+	h2 {
+		padding: 1% 5%;
+		font-size: 2.5em;
+		border: 3px solid #666;
+		box-shadow: 3px 3px $PinkPurple;
+		display: inline-block;
+		margin: 0 auto;
+	}
+}
+
+.form {
+	width: 80%;
+	margin: 0 auto;
+}
+.center-block {
+  margin-right: auto;
+  margin-left: auto;
+}
+.form {
+	.flex-container-row {
+	  display: -webkit-box;
+	  display: -ms-flexbox;
+	  display: flex;
+	  -webkit-box-orient: horizontal;
+	  -webkit-box-direction: normal;
+	  -ms-flex-flow: row nowrap;
+	  flex-flow: row wrap;
+	}
+
+	form {
+	  position: relative;
+	  width: 100%;
+	  max-width: 85rem;
+	  font-size: 1.3em;
+	  font-weight: normal;
+	  line-height: 1.2222em;
+	}
+
+	form > div:last-child {
+	  justify-content: space-around;
+	}
+
+	input,
+	textarea {
+	  flex-grow: 1;
+	  margin: 1rem 2%;
+	  padding: 1.1rem 1.5rem;
+	  border: 3px solid #666;
+	  -webkit-transition: background .2s;
+	  transition: background .2s;
+	}
+
+	.submit-request {
+		color: #fff;
+		background: #666;
+		text-transform: uppercase;
+		transition: 0.3s;
+		letter-spacing: 2px;
+		font-size: 1.4em;
+	}
+
+	.submit-request:hover {
+		box-shadow: 5px 5px $LightBlue;
+
+	}
+}

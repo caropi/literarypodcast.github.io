@@ -1,0 +1,135 @@
+.homepage_welcome {
+	background: url('../assets/scott-webb-356748-unsplash.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+	padding-bottom: 5%;
+	top: -200px;
+	clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	h2 {
+		padding-top: 30%;
+		padding-bottom: 5%;
+		text-shadow: 2px 2px #fff;
+		font-size: 3.2em;
+		text-align: center;
+	}
+}
+.find-us {
+	background: #fff;
+	width: 30%;
+	border: 5px solid #666;
+	box-shadow: 5px 5px $LightBlue;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 1.6em;
+	h3 {
+		letter-spacing: 5px;
+		text-transform: uppercase;
+	}
+	input {
+		width: 100%;	
+	}
+	ul {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		width: 100%;
+	}	
+	a {
+		display: block;
+		  width: 2.5rem;
+		  height: 2.5rem;
+		  background: #666;
+		  border-radius: 50%;
+		  text-decoration: none;
+		  text-align: center;
+		  line-height: 2.5rem;
+		  color: #fff;
+		  transition: 0.5s background;
+	}
+	a:hover {
+		background:$Blue;
+	}	
+	.sign-up {
+		width: 80%;
+	}	
+}
+
+.find-us:hover {
+
+}
+
+.sign-up {
+	margin: 16px 0;
+	input {
+
+		text-align: center;
+		padding: 3% 0;
+		margin-bottom: 2%;
+		color: #666;
+		border: 3px solid #666;
+		background:#fff;
+	}
+
+	.clear input {
+		background: #666;
+		color: #fff;
+		transition: .3s;
+	}
+
+	.clear input:hover {
+		box-shadow: 3px 3px $Blue;
+		background: #fff;
+		color: #666;
+	}
+}
+
+.image_post_container {
+
+}
+
+.homepage_blog {
+		position: relative;
+		top: -100px;
+	h2 {
+		padding: 1% 5%;
+		font-size: 2.5em;
+		border: 3px solid #666;
+		box-shadow: 3px 3px $PinkPurple;
+		display: inline-block;
+		margin: 0 auto;
+	}
+
+	.image_post_container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.post-info {
+		flex: 1 1;
+	}
+
+	.image {
+		flex: 1 1;
+	}
+
+	.change {
+		display: inline-block;
+	}
+
+	.change:hover {
+		color: $LightBlue;
+	}
+
+}
